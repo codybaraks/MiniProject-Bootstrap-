@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <!--css links-->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <!--more css links-->
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="css/Startup.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <!--<link rel="stylesheet" href="css/bootstrap-grid.css">-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 
-    <!--js links-->
-    <link rel="stylesheet" href="js/bootstrap.bundle.js">
-    <link rel="stylesheet" href="js/bootstrap.js">
+    <!--custom css-->
+    <link rel="stylesheet" href="Startup.css">
+
 </head>
 <body>
 
 <nav class="navbar navbar-light bg-faded navbar-fixed-top">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#startupNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+
+  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#startupnavbarNav">
   </button>
-     <a class="navbar-brand" href="#"><img src="img/mac.jpg" alt="startup" height="26"></a>
-  <div class="collapse navbar-toggle" id="startupNavbar">
-    <ul class="nav navbar-nav pul">
+    <a class="navbar-brand" href="#"><img src="img/mac.jpg" alt="startup.logo" height="36"></a>
+
+  <div class="collapse navbar-toggleable-xs" id="startupnavbarNav">
+    <ul class=" nav navbar-nav pull-sm-right">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
@@ -36,11 +35,23 @@
         <a class="nav-link" href="#">Blog</a>
       </li>
         <li class="nav-item">
-            <a class="btn btn-primary" href="#">Sign In</a>
-        </li>
+        <a class="btn btn-primary" href="#">Sign In</a>
+      </li>
     </ul>
   </div>
 </nav>
+
+<div id="stage">
+    <div id="stage-caption">
+        <h1 class="display-3">That's handy, Harry! sticks it in the Startup.logo</h1>
+        <p>i see your future</p>
+        <a href="" class="btn btn-lg btn-success">Sign Up now</a>
+    </div>
+</div>
+
+<!-- jquery section-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
